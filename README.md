@@ -30,7 +30,7 @@ Above command will create one user in all 2 servers. We can change the username 
 ##  Removing the user from all servers
 
 Type this command in terminal
-#### ansible-playbook add_user.yml
+#### ansible-playbook remove_user.yml
 ``` ---
 - hosts: host1,host2
   become: true
