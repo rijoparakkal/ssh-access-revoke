@@ -26,3 +26,19 @@ Type this command in terminal
       home: /home/developer_name  # Defaults to /home/<username>
 ```  
 Above command will create one user in all 2 servers. We can change the username and password in yml file
+
+##  Removing the user from all servers
+
+Type this command in terminal
+#### ansible-playbook add_user.yml
+``` ---
+- hosts: host1,host2
+  become: true
+  tasks:
+   - name: ansible remove user
+     user:
+      name: developer_name
+       state: absent
+     
+```  
+Above command will remove the mentioned user from all servers
