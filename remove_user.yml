@@ -1,0 +1,9 @@
+---
+- hosts: host1,host2
+  become: true
+  tasks:
+   - name: ansible remove user
+     user:
+      name: developer_name
+       state: absent
+     
