@@ -5,7 +5,7 @@
    - name: Create a login user
      user:
       name: developer_name
-      password: 'passowrd'
+      password: 'password'
       groups: # Empty by default, here we give it some groups
       - sudo
       state: present
