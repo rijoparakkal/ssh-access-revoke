@@ -16,7 +16,7 @@ Type this command in terminal
    - name: Create a login user
      user:
       name: developer_name
-      password: 'passowrd'
+      password: 'password'
       groups: # Empty by default, here we give it some groups
       - sudo
       state: present
@@ -25,4 +25,4 @@ Type this command in terminal
       createhome: yes        # Defaults to yes
       home: /home/developer_name  # Defaults to /home/<username>
 ```  
-Above command will create one user in all 2 servers
+Above command will create one user in all 2 servers. We can change the username and password in yml file
