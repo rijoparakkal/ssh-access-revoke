@@ -25,3 +25,4 @@ Type this command in terminal
       createhome: yes        # Defaults to yes
       home: /home/developer_name  # Defaults to /home/<username>
 ```  
+Above command will create one user in all 2 servers
